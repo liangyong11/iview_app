@@ -1,0 +1,95 @@
+#application_globe {
+  height: 100%;
+}
+
+#loading {
+  background-color: rgb(20, 20, 20);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader_child {
+  border: solid 0.5em #9b59b6;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  padding: 0.5em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: #3498db;
+  background-clip: content-box;
+  animation: loaderSpin 1.5s linear infinite;
+}
+
+@keyframes loaderSpin {
+  50% {
+    border-top-color: #3498db;
+    border-bottom-color: #3498db;
+    background-color: #2ecc71;
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+#menu {
+  position: absolute;
+  z-index: 50;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.globe_button {
+  color: rgba(127, 255, 255, 0.75);
+  background: transparent;
+  outline: 1px solid rgba(127, 255, 255, 0.75);
+  border: 0px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+.cls-1 {
+  fill: #000202;
+}
+
+.cls-2, .cls-8 {
+  fill: #fff;
+}
+
+.cls-2, .cls-3, .cls-6 {
+  fill-rule: evenodd;
+}
+
+.cls-3, .cls-5 {
+  fill: #2bb295;
+}
+
+.cls-4 {
+  stroke: #2bb295;
+}
+
+.cls-6, .cls-7 {
+  fill: #22bb9d;
+}
+
+.cls-9 {
+  fill: #25a495;
+}
+
+.cls-10 {
+  fill: #1eac9c;
+}

@@ -1,0 +1,34 @@
+.d3_tip_stack {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  background: #000000;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 1.5;
+  z-index: 100000;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3_tip_stack:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: #000000;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3_tip_stack.n:after {
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+#chart_stack {
+  height: 100%;
+}
